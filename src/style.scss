@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+#root {
+  height: 100vh;
+}
+.app {
+  display: flex;
+  height: 100vh;
+}
+.header {
+  flex-basis: 30%;
+  border-right: 2px solid #6a737b2d;
+  height: 100%; 
+}
+.mainarea {
+  flex-basis: 70%;
+}
+.toolbar {
+  border-bottom: 2px solid #6a737b2d;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+.content {
+  height: 100vh;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
